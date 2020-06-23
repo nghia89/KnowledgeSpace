@@ -1,0 +1,8 @@
+<app-header></app-header>
+<app-sidebar (collapsedEvent)="receiveCollapsed($event)"></app-sidebar>
+<section [ngClass]="{ collapsed: collapedSideBar }" class="main-container">
+    <div style="min-height: 1200px;">
+        <router-outlet></router-outlet>
+    </div>
+
+</section>
